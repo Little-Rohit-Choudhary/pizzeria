@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+import D1 from "../assets/img/D1.jpg";
+import D2 from "../assets/img/D2.jpg";
+import D3 from "../assets/img/D3.jpg";
+import D4 from "../assets/img/D4.jpg";
+import D5 from "../assets/img/D5.jpg";
+import D6 from "../assets/img/D6.jpg";
+import PM4 from "../assets/img/PM4.jpg";
+import PM2 from "../assets/img/PM2.jpg";
+import PM3 from "../assets/img/PM3.jpg";
+
 
 const OrderForm = ({ onClose }) => {
   const [selectedPizzas, setSelectedPizzas] = useState([]); // Track multiple selected pizzas
@@ -10,64 +20,63 @@ const OrderForm = ({ onClose }) => {
     email: "",
   });
 
-  // Pizza details
   const pizzas = [
     {
       id: 1,
       name: "Margherita Magic 🍅🧀",
       price: 10.99,
-      image: "./src/assets/img/D1.jpg",
+      image: D1,
     },
     {
       id: 2,
       name: "Smoky BBQ Feast 🔥🍖",
       price: 12.99,
-      image: "./src/assets/img/D2.jpg",
+      image: D2,
     },
     {
       id: 3,
       name: "Tuscany Treat 🍕🌿",
       price: 10.99,
-      image: "./src/assets/img/D3.jpg",
+      image: D3,
     },
     {
       id: 4,
       name: "Veggie Supreme",
       price: 11.99,
-      image: "./src/assets/img/D4.jpg",
+      image: D4,
     },
     {
       id: 5,
       name: "Classic Caprese 🥬🍅",
       price: 10.99,
-      image: "./src/assets/img/D5.jpg",
+      image: D5,
     },
     {
       id: 6,
-      name: "Truffle Temptation 🍄✨" ,
+      name: "Truffle Temptation 🍄✨",
       price: 12.99,
-      image: "./src/assets/img/D6.jpg",
+      image: D6,
     },
     {
-        id: 7,
-        name: "Truffle Supreme 🍄" ,
-        price: 16.99,
-        image: "./src/assets/img/PM4.jpg",
-      },
-      {
-        id: 8,
-        name: "Inferno Royale 🌶️" ,
-        price: 18.99,
-        image: "./src/assets/img/PM2.jpg",
-      },
-      {
-        id: 9,
-        name: "Mediterranean Bliss 🍅" ,
-        price: 14.99,
-        image: "./src/assets/img/PM3.jpg",
-      },
+      id: 7,
+      name: "Truffle Supreme 🍄",
+      price: 16.99,
+      image: PM4,
+    },
+    {
+      id: 8,
+      name: "Inferno Royale 🌶️",
+      price: 18.99,
+      image: PM2,
+    },
+    {
+      id: 9,
+      name: "Mediterranean Bliss 🍅",
+      price: 14.99,
+      image: PM3,
+    },
   ];
-
+  
   const handleUserInfoChange = (e) => {
     const { name, value } = e.target;
     setUserInfo((prev) => ({
