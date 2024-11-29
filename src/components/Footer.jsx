@@ -7,7 +7,7 @@ import { CiPizza } from "react-icons/ci";
 
 const Footer = () => {
   return (
-    <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0">
+    <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0 select-none">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <div className="flex">
@@ -25,25 +25,21 @@ const Footer = () => {
           <nav className=" flex flex-col gap-2">
             <a
               className="custom-link"
-              href="/"
             >
               Dishes
             </a>
             <a
               className="custom-link"
-              href="/"
             >
               About
             </a>
             <a
               className="custom-link"
-              href="/"
             >
               Menu
             </a>
             <a
               className="custom-link"
-              href="/"
             >
               Reviews
             </a>
@@ -54,13 +50,11 @@ const Footer = () => {
           <nav className=" flex flex-col gap-2">
             <a
               className="custom-link"
-              href="/"
             >
               Our Dishes
             </a>
             <a
               className="custom-link"
-              href="/"
             >
               Premium Menu
             </a>
@@ -71,20 +65,17 @@ const Footer = () => {
           <nav className=" flex flex-col gap-2">
             <a
               className="custom-link"
-              href="/"
             >
               pizzeria@email.com
             </a>
             <a
               className="custom-link"
-              href="/"
             >
               +91 958 248 9664
             </a>
             <div className="flex gap-2">
               <a
                 className="custom-link"
-                href="/"
               >
                 <span>
                     <BsInstagram size={20} />
@@ -92,7 +83,6 @@ const Footer = () => {
               </a>
               <a
                 className="custom-link"
-                href="/"
               >
                 <span>
                     <BsFacebook size={20} />
@@ -100,7 +90,6 @@ const Footer = () => {
               </a>
               <a
                 className="custom-link"
-                href="/"
               >
                 <span>
                     <RiTwitterXFill size={20} />
@@ -108,7 +97,6 @@ const Footer = () => {
               </a>
               <a
                 className="custom-link"
-                href="/"
               >
                 <span>
                     <BsWhatsapp size={20} />
