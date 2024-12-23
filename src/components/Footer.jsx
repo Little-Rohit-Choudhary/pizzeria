@@ -110,7 +110,7 @@ const Footer = () => {
         <p>
           <p className=" text-center py-4 text-base">
             @copyright developed by
-            <span className=" text-brightColor"> Shivansh Sharma</span> |
+            <span className=" text-brightColor"> Rohit Choudhary</span> |
             All rights reserved
           </p>
         </p>
